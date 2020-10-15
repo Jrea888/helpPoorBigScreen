@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精准扶贫大屏3</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pageThree.css">
+</head>
+<body>
+<div class="wrap" onclick="javascript:window.location.href='./pageFour.html'">
+    <div class="header">
+        <div class="timeBox">
+            <div class="jzTime">
+                本分析采用截至2018年12月31日24时的全国扶贫开发信息系统、陕西省脱贫攻坚大数据平台和咸阳市精准扶贫大数据平台系统数据
+            </div>
+        </div>
+        <div class="h-right">
+            <div id="nowTime">【当前日期：<span></span>】</div>
+            <div id="weather">天气：<span></span></div>
+        </div>
+        <div class="djs">
+            <span class="tit">距离完成年度脱贫任务仅剩</span>
+            <span class="djs-box" id="days">0</span>
+            <span class="pouct">
+                天
+            </span>
+            <span class="djs-box" id="ss">0</span>
+            <span class="pouct">
+                时
+            </span>
+            <span class="djs-box" id="ms">0</span>
+            <span class="pouct">
+                分
+            </span>
+            <span class="djs-box" id="mm">0</span>
+            <span class="pouct">
+                秒
+            </span>
+        </div>
+    </div>
+    <div class="topCharts">
+        <!--各县市2018年度返贫户分布情况-->
+        <div class="gxspkfbImg">
+            <div class="mhb-pphd"><h2>各县市2018年度返贫户分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxspkfb"></div>
+            </div>
+        </div>
+        <!--2014年至2018年新识别贫困户分布情况-->
+        <div class="ysybxsbfbImg">
+            <div class="mhb-pphd"><h2>2014年至2018年新识别贫困户分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ysybxsbfb"></div>
+            </div>
+        </div>
+        <!--2014年至2018年新识别贫困户数据统计-->
+        <div class="xsbpkhtjImg">
+            <div class="mhb-pphd"><h2>2014年至2018年新识别贫困户数据统计</h2></div>
+            <div class="mhb-ppbd">
+                <div id="xsbpkhtj"></div>
+            </div>
+        </div>
+
+        <!--2014年至2018年新识别贫困户劳动力分析-->
+        <div class="xsbldlfxImg">
+            <div class="mhb-pphd"><h2>2014年至2018年新识别贫困户劳动力分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="xsbldlfx"></div>
+            </div>
+        </div>
+        <!--2014年新识别贫困户致贫原因分析-->
+        <div class="ysnyyfxImg">
+            <div class="mhb-pphd"><h2>2014年新识别贫困户致贫原因分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ysnyyfx"></div>
+            </div>
+        </div>
+        <!--2015年新识别贫困户致贫原因分析-->
+        <div class="ywnyyfxImg">
+            <div class="mhb-pphd"><h2>2015年新识别贫困户致贫原因分析 </h2></div>
+            <div class="mhb-ppbd">
+                <div id="ywnyyfx"></div>
+            </div>
+        </div>
+        <!--2016年新识别贫困户致贫原因分析-->
+        <div class="ylnyyfxImg">
+            <div class="mhb-pphd"><h2>2016年新识别贫困户致贫原因分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ylnyyfx"></div>
+            </div>
+        </div>
+        <!--2017年新识别贫困户致贫原因分析-->
+        <div class="yqnyyfxImg">
+            <div class="mhb-pphd"><h2>2017年新识别贫困户致贫原因分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="yqnyyfx"></div>
+            </div>
+        </div>
+        <!--2018年新识别贫困户致贫原因分析-->
+        <div class="ybnyyfxImg">
+            <div class="mhb-pphd"><h2>2018年新识别贫困户致贫原因分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ybnyyfx"></div>
+            </div>
+        </div>
+        <!--全市2018年剩余贫困户主要燃料类型分析-->
+        <div class="sypkhrlfxImg">
+            <div class="mhb-pphd"><h2>全市2018年剩余贫困户主要燃料类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="sypkhrlfx"></div>
+            </div>
+        </div>
+        <!--2014年建档立卡户主要燃料类型为清洁能源的占比分析-->
+        <div class="qjnyzbfxImg">
+            <div class="mhb-pphd"><h2>2014年建档立卡户主要燃料类型为清洁能源的占比分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qjnyzbfx"></div>
+            </div>
+        </div>
+        <!--全市2018年已脱贫户主要燃料类型分析-->
+        <div class="ytpybnlfxImg">
+            <div class="mhb-pphd"><h2>全市2018年已脱贫户主要燃料类型分析 </h2></div>
+            <div class="mhb-ppbd">
+                <div id="ytpybnlfx"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomCharts">
+        <!--2018年新识别贫困人数占比情况-->
+        <div class="xsbpkrszbImg">
+            <div class="mhb-pphd"><h2>2018年新识别贫困人数占比情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="xsbpkrszb"></div>
+            </div>
+        </div>
+        <!--2018年新识别贫困户分布情况-->
+        <div class="ybxsbpkfbImg">
+            <div class="mhb-pphd"><h2>2018年新识别贫困户分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ybxsbpkfb"></div>
+            </div>
+        </div>
+        <!--2018年新识别贫困户数占比情况-->
+        <div class="xsbpkhszbImg">
+            <div class="mhb-pphd"><h2>2018年新识别贫困户数占比情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="xsbpkhszb"></div>
+            </div>
+        </div>
+        <!--各县市2018年度返贫户数占比-->
+        <div class="gxsfphszbImg">
+            <div class="mhb-pphd"><h2>各县市2018年度返贫户数占比</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxsfphszb"></div>
+            </div>
+        </div>
+        <!--建档立卡户主要燃料类型分布情况-->
+        <div class="jdlkrlfxImg">
+            <div class="mhb-pphd"><h2>建档立卡户主要燃料类型分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="jdlkrlfx"></div>
+            </div>
+        </div>
+        <!--建档立卡户主要燃料类型分析-->
+        <div class="jdlkrllxfxImg">
+            <div class="mhb-pphd"><h2>建档立卡户主要燃料类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="jdlkrllxfx"></div>
+            </div>
+        </div>
+        <!--全市2018年已脱贫户主要燃料类型分析-->
+        <div class="ytprlfxImg">
+            <div class="mhb-pphd"><h2>全市2018年已脱贫户主要燃料类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ytprlfx"></div>
+            </div>
+        </div>
+        <!--全市2018年剩余贫困户主要燃料类型分析-->
+        <div class="sypkybnlfxImg">
+            <div class="mhb-pphd"><h2>全市2018年剩余贫困户主要燃料类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="sypkybnlfx"></div>
+            </div>
+        </div>
+        <!--2014年建档立卡户主要燃料类型占比分析-->
+        <div class="ysrllxzbImg">
+            <div class="mhb-pphd"><h2>2014年建档立卡户主要燃料类型占比分析 </h2></div>
+            <div class="mhb-ppbd">
+                <div id="ysrllxzb"></div>
+            </div>
+        </div>
+        <!--2015年建档立卡户主要燃料类型占比分析-->
+        <div class="ysrllxzbImg">
+            <div class="mhb-pphd"><h2>2015年建档立卡户主要燃料类型占比分析 </h2></div>
+            <div class="mhb-ppbd">
+                <div id="ysrllxzb2015"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/pageThree.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/common.js"></script>
+</html>

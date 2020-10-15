@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精准扶贫大屏首页</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        body{
+            background: url("./images/beijing1-2.jpg") no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap" onclick="javascript:window.location.href='./pages/pageOne.html'">
+    <div class="header">
+        <div class="timeBox">
+            <div class="jzTime">
+                本分析采用截至2018年12月31日24时的全国扶贫开发信息系统、陕西省脱贫攻坚大数据平台和咸阳市精准扶贫大数据平台系统数据
+            </div>
+        </div>
+        <div class="h-right">
+            <div id="nowTime">【当前日期：<span></span>】</div>
+            <div id="weather">天气：<span></span></div>
+        </div>
+        <div class="djs">
+            <span class="tit">距离完成年度脱贫任务仅剩</span>
+            <span class="djs-box" id="days">0</span>
+            <span class="pouct">
+                天
+            </span>
+            <span class="djs-box" id="ss">0</span>
+            <span class="pouct">
+                时
+            </span>
+            <span class="djs-box" id="ms">0</span>
+            <span class="pouct">
+                分
+            </span>
+            <span class="djs-box" id="mm">0</span>
+            <span class="pouct">
+                秒
+            </span>
+        </div>
+    </div>
+    <div class="charts-data">
+        <!--左侧图表开始-->
+        <div class="charts-left">
+            <!--上部分  开始-->
+            <div class="top">
+                <!--各县市2014年至2018年人均收入变化情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>各县市2014年至2018年人均收入变化情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="OneChart"></div>
+                    </div>
+                </div>
+                <!--2018年底剩余贫困人口各县市分布情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>2018年底剩余贫困人口各县市分布情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="ThreeChart"></div>
+                    </div>
+                </div>
+                <!--2018年底未出列贫困村分布情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>2018年底未出列贫困村分布情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="FiveChart"></div>
+                    </div>
+                </div>
+                <!--年度剩余贫困户人均纯收入-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>年度剩余贫困户人均纯收入</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="FifteenChart"></div>
+                    </div>
+                </div>
+            </div>
+            <!--上部分  结束-->
+            <!--下部分  开始-->
+            <div class="bottom">
+                <!--2014年至2018年主要致贫原因变化情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>2014年至2018年主要致贫原因变化情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="TwoChart"></div>
+                    </div>
+                </div>
+                <!--全市贫困发生率下降统计图-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>全市贫困发生率下降统计图</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="FourChart"></div>
+                    </div>
+                </div>
+                <!--各县市脱贫人口劳动情况总计-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>各县市脱贫人口劳动情况总计</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="FourteenChart"></div>
+                    </div>
+                </div>
+                <!--各县市脱贫户属性总计分析-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>各县市脱贫户属性总计分析</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="SixteenChart"></div>
+                    </div>
+                </div>
+            </div>
+            <!--下部分  结束-->
+        </div>
+        <!--左侧图表结束-->
+
+        <!--中部 开始-->
+        <div class="center">
+            <div class="c-left">
+                <div class="map-left">
+                    <!--一行数据展示左-->
+                    <div class="data-list data-list-left">
+                        <ul>
+                            <li>
+                                <div class="title">标注脱贫</div>
+                                <div class="data-box">
+                                    <div class="icon">
+                                        <img src="./images/bztp.png" alt="">
+                                    </div>
+                                    <div class="data-num">
+                                        <p>73930人</p>
+                                        <p>占减贫人口的97.41%</p>
+                                    </div>
+                                    <div class="data-bottom">
+                                        <span>新识别：91人</span>
+                                        <span>返贫：21人</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">贫困人口变化</div>
+                                <div class="data-box">
+                                    <div class="icon">
+                                        <img src="./images/pkrkbh.png" alt="">
+                                    </div>
+                                    <div class="data-num">
+                                        <p>-1966人</p>
+                                        <p>占减贫人口的2.60%</p>
+                                    </div>
+                                    <div class="data-bottom">
+                                        <span>自然增加：995人</span>
+                                        <span>自然减少：2961人</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">未脱贫贫困人口</div>
+                                <div class="data-box">
+                                    <div class="icon">
+                                        <img src="./images/wtppkrk.png" alt="">
+                                    </div>
+                                    <div class="data-num">
+                                        <p>47487人</p>
+                                        <p>脱贫率：61.51%</p>
+                                    </div>
+                                    <div class="data-bottom">
+                                        <span>净减少：75892人</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--左侧两个图  开始-->
+                    <div class="tp">
+                        <!--全市剩余贫困人口规模-->
+                        <div class="chartBox chartEight">
+                            <div class="mhb-pphd"><h2>全市剩余贫困人口规模</h2></div>
+                            <div class="mhb-ppbd">
+                                <div id="EightChart"></div>
+                            </div>
+                        </div>
+                        <!--2014年至2018年新识别贫困户数据统计-->
+                        <div class="chartBox chartNine">
+                            <div class="mhb-pphd"><h2>2014年至2018年新识别贫困户数据统计</h2></div>
+                            <div class="mhb-ppbd">
+                                <div id="NineChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--左侧两个图  结束-->
+
+                    <!--右侧排行  开始-->
+                    <div class="ph">
+                        <!--各县市2018年度脱贫户人均纯收入排名-->
+                        <div class="chartBox chartTen">
+                            <div class="mhb-pphd"><h2>各县市2018年度脱贫户人均纯收入排名</h2></div>
+                            <div class="mhb-ppbd">
+                                <div id="TenChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--右侧排行  结束-->
+                </div>
+            </div>
+            <!--地图 开始-->
+            <div class="map-content">
+                <div id="map"></div>
+                <!--表格数据-->
+                <div class="data-table">
+                    <table>
+                        <tr>
+                            <th>贫困户类型</th>
+                            <th>户数</th>
+                            <th>占比</th>
+                            <th>人数</th>
+                            <th>占比</th>
+                        </tr>
+                        <tr>
+                            <td>低保贫困户</td>
+                            <td>13420</td>
+                            <td>66.37%</td>
+                            <td>35435</td>
+                            <td>74.62%</td>
+                        </tr>
+                        <tr>
+                            <td>特困供养贫困户</td>
+                            <td>4396</td>
+                            <td>21.74%</td>
+                            <td>4773</td>
+                            <td>10.05%</td>
+                        </tr>
+                        <tr>
+                            <td>一般贫困户</td>
+                            <td>2405</td>
+                            <td>11.89%</td>
+                            <td>7279</td>
+                            <td>15.33%</td>
+                        </tr>
+                        <tr>
+                            <td>合计</td>
+                            <td>20221</td>
+                            <td>100.00%</td>
+                            <td>47487</td>
+                            <td>100.00%</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+            </div>
+            <!--地图 结束-->
+            <div class="c-right">
+                <div class="map-right">
+                    <!--一行数据展示右-->
+                    <div class="data-list data-list-right">
+                        <ul>
+                            <li>
+                                <div class="title">剩余贫困人口</div>
+                                <div class="data-box">
+                                    <div class="icon">
+                                        <img src="./images/sypkrk.png" alt="">
+                                    </div>
+                                    <div class="data-num">
+                                        <p>47487人</p>
+                                        <p>脱贫率61.51%</p>
+                                    </div>
+                                    <div class="data-bottom">
+                                        <span>减少：75892人</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">剩余贫困村</div>
+                                <div class="data-box">
+                                    <div class="icon">
+                                        <img src="./images/sypkc.png" alt="">
+                                    </div>
+                                    <div class="data-num">
+                                        <p>72个</p>
+                                        <p>减幅：90.71%</p>
+                                    </div>
+                                    <div class="data-bottom">
+                                        <span>出列：703个</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">剩余贫困户</div>
+                                <div class="data-box">
+                                    <div class="icon">
+                                        <img src="./images/sypkh.png" alt="">
+                                    </div>
+                                    <div class="data-num">
+                                        <p>20221户</p>
+                                        <p>脱贫率为98.60%</p>
+                                    </div>
+                                    <div class="data-bottom">
+                                        <span>最高县区：三原县30户</span>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--左侧排行  开始-->
+                    <div class="ph">
+                        <!--各县市2018年度脱贫户数排名-->
+                        <div class="chartBox chartEle">
+                            <div class="mhb-pphd"><h2>各县市2018年度脱贫户数排名</h2></div>
+                            <div class="mhb-ppbd">
+                                <div id="EleChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--左侧排行  结束-->
+
+                    <!--右侧两个图  开始-->
+                    <div class="tp">
+                        <!--2018年全市剩余贫困户属性分布情况-->
+                        <div class="chartBox chartTwe">
+                            <div class="mhb-pphd"><h2>2018年全市剩余贫困户属性分布情况</h2></div>
+                            <div class="mhb-ppbd">
+                                <div id="TweChart"></div>
+                            </div>
+                        </div>
+                        <!--2018年全市剩余贫困人口属性分布情况-->
+                        <div class="chartBox chartThi">
+                            <div class="mhb-pphd"><h2>2018年全市剩余贫困人口属性分布情况</h2></div>
+                            <div class="mhb-ppbd">
+                                <div id="ThiChart"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--右侧两个图  结束-->
+                </div>
+            </div>
+        </div>
+        <!--中部 结束-->
+
+        <!--右侧图表开始-->
+        <div class="charts-right">
+            <!--上部分  开始-->
+            <div class="top">
+                <!--各县市脱贫户累计享受脱贫措施-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>各县市脱贫户累计享受脱贫措施</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="SixChart"></div>
+                    </div>
+                </div>
+                <!--2018年各县市贫困户项目直补分布图-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>2018年各县市贫困户项目直补分布图</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="SeventeenChart"></div>
+                    </div>
+                </div>
+                <!--2018年新识别贫困户数占比情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>2018年新识别贫困户数占比情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="NineteenChart"></div>
+                    </div>
+                </div>
+                <!--全市2018年已脱贫户主要燃料类型分析-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>全市2018年已脱贫户主要燃料类型分析</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="TwentyOneChart"></div>
+                    </div>
+                </div>
+            </div>
+            <!--上部分  结束-->
+            <!--下部分  开始-->
+            <div class="bottom">
+                <!--全市2018年建档立卡户主要燃料类型分析-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>全市2018年建档立卡户主要燃料类型分析</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="SevenChart"></div>
+                    </div>
+                </div>
+                <!--各县市2018年度产业扶贫总计情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>各县市2018年度产业扶贫总计情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="EighteenChart"></div>
+                    </div>
+                </div>
+                <!--2018年各县市科技帮扶情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>2018年各县市科技帮扶情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="TwentyChart"></div>
+                    </div>
+                </div>
+                <!--全市2018年度治疗费用报销情况-->
+                <div class="chartBox chartCommon">
+                    <div class="mhb-pphd"><h2>全市2018年度治疗费用报销情况</h2></div>
+                    <div class="mhb-ppbd">
+                        <div id="TwentyTwoChart"></div>
+                    </div>
+                </div>
+            </div>
+            <!--下部分  结束-->
+        </div>
+        <!--右侧图表结束-->
+
+    </div>
+</div>
+</body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/echarts.min.js"></script>
+<script src="./js/xianyang-map.js"></script>
+<script src="./js/china.js"></script>
+<script src="./js/echart/theme.js"></script>
+<script src="./js/echarts-wordcloud.js"></script>
+<script src="./js/echarts-gl.min.js"></script>
+<script src="./js/common.js"></script>
+<script src="./js/index.js"></script>
+</html>

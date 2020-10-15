@@ -1,0 +1,19 @@
+{
+    "status" : 200,
+    "msg" : "查询数据成功",
+    "cdata" : [
+	         {"value":0,"name" : "渭城区"},
+	         {"value":880,"name" : "三原县"},
+	         {"value":0,"name" : "秦都区"},
+             {"value":8163,"name" : "乾县"},
+             {"value":1243,"name" : "泾阳县"},
+             {"value":8740,"name" : "彬县"},
+             {"value":6838,"name" : "礼泉县"},
+             {"value":7575,"name" : "长武县"},
+             {"value":14064,"name" : "淳化县"},
+             {"value":14308,"name" : "永寿县"},
+            {"value":7837,"name" : "旬邑县"},
+            {"value":3848,"name" : "武功县"},
+            {"value":434,"name" : "兴平市"}
+    ]
+}

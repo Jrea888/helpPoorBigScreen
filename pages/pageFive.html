@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精准扶贫大屏5</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pageFive.css">
+</head>
+<body>
+<div class="wrap" onclick="javascript:window.location.href='./pageSix.html'">
+    <div class="header">
+        <div class="timeBox">
+            <div class="jzTime">
+                本分析采用截至2018年12月31日24时的全国扶贫开发信息系统、陕西省脱贫攻坚大数据平台和咸阳市精准扶贫大数据平台系统数据
+            </div>
+        </div>
+        <div class="h-right">
+            <div id="nowTime">【当前日期：<span></span>】</div>
+            <div id="weather">天气：<span></span></div>
+        </div>
+        <div class="djs">
+            <span class="tit">距离完成年度脱贫任务仅剩</span>
+            <span class="djs-box" id="days">0</span>
+            <span class="pouct">
+                天
+            </span>
+            <span class="djs-box" id="ss">0</span>
+            <span class="pouct">
+                时
+            </span>
+            <span class="djs-box" id="ms">0</span>
+            <span class="pouct">
+                分
+            </span>
+            <span class="djs-box" id="mm">0</span>
+            <span class="pouct">
+                秒
+            </span>
+        </div>
+    </div>
+    <div class="topCharts">
+        <!--2018年各县市贫困户项目直补分布图-->
+        <div class="scxmzbImg">
+            <div class="mhb-pphd"><h2>2018年各县市贫困户项目直补分布图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="scxmzb"></div>
+            </div>
+        </div>
+        <!--贫困户光伏产业收入情况-->
+        <div class="gfcysrImg">
+            <div class="mhb-pphd"><h2>贫困户光伏产业收入情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gfcysr"></div>
+            </div>
+        </div>
+        <!--2018年各县市主体带动情况-->
+        <div class="gxsztddImg">
+            <div class="mhb-pphd"><h2>2018年各县市主体带动情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxsztd"></div>
+            </div>
+        </div>
+        <!--2018年全市普通劳动力类型分析-->
+        <div class="qsbtldlImg">
+            <div class="mhb-pphd"><h2>2018年全市普通劳动力类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qsbtldl"></div>
+            </div>
+        </div>
+        <!--2018年全市技能劳动力类型分析-->
+        <div class="qsjnldlImg">
+            <div class="mhb-pphd"><h2>2018年全市技能劳动力类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qsjnldl"></div>
+            </div>
+        </div>
+        <!--贫困户集体经济收入情况（无数据）-->
+        <div class="jtsrqkImg">
+            <div class="mhb-pphd"><h2>贫困户集体经济收入情况（无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="jtsrqk"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力18-45岁年龄分布-->
+        <div class="qzldl1845Img">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力18-45岁年龄分布</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qzldl1845"></div>
+            </div>
+        </div>
+        <div class="nxldlqkImg">
+            <div class="mhb-pphd"><h2>全市男性潜在劳动力分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="nxldlqk"></div>
+            </div>
+        </div>
+        <div class="mjzdzwqkImg">
+            <div class="mhb-pphd"><h2>全市种植面积最大的五种作物</h2></div>
+            <div class="mhb-ppbd">
+                <div id="mjzdzwqk"></div>
+            </div>
+        </div>
+        <div class="srzbqkImg">
+            <div class="mhb-pphd"><h2>全市贫困户种植业收入占比分情况 （无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="srzbqk"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomCharts">
+        <div class="zzmjzdImg">
+            <div class="mhb-pphd"><h2>各县市贫困户种植面积最多的作物分布图（无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zzmjzd"></div>
+            </div>
+        </div>
+        <div class="zdwzjqImg">
+            <div class="mhb-pphd"><h2>全市养殖户数最多五种家禽家畜 （无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zdwzjq"></div>
+            </div>
+        </div>
+        <!--2018年各县市科技帮扶情况-->
+        <div class="gxskjbfImg">
+            <div class="mhb-pphd"><h2>2018年各县市科技帮扶情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxskjbf"></div>
+            </div>
+        </div>
+        <!--2018年各县市金融支持情况-->
+        <div class="gxsjrzcImg">
+            <div class="mhb-pphd"><h2>2018年各县市金融支持情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxsjrzc"></div>
+            </div>
+        </div>
+        <!--2018年全市半劳动力/弱劳动力类型分析-->
+
+        <div class="qsbrldlImg">
+            <div class="mhb-pphd"><h2>2018年全市半劳动力/弱劳动力类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qsbrldl"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力类型总计分析-->
+        <div class="qsldlzjfxImg">
+            <div class="mhb-pphd"><h2>2018年全市半劳动力/弱劳动力类型分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qsldlzjfx"></div>
+            </div>
+        </div>
+        <!-- 2018年全市潜在劳动力年龄分布总计-->
+        <div class="qsqzldlnlImg">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力年龄分布总计</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qsqzldlnl"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力46-60岁年龄分布-->
+        <div class="qzldl4660Img">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力46-60岁年龄分布</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qzldl4660"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力61岁以上年龄分布-->
+        <div class="qzldl61Img">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力61岁以上年龄分布</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qzldl61"></div>
+            </div>
+        </div>
+        <div class="yzsffbImg">
+            <div class="mhb-pphd"><h2>全市贫困户养殖收放分布图 （无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="yzsffb"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/pageFive.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/common.js"></script>
+</html>

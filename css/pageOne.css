@@ -1,0 +1,80 @@
+#chartOneSecond {
+    width: 700px;
+    height: 410px;
+    display: inline-block;
+}
+
+#chartOneFirst, #chartOneSecond, #chartOneThird {
+    width: 1135px;
+    height: 410px;
+    display: inline-block;
+}
+
+.syrkgmImg, .pkrszbImg, .zpyyzjImg, .hjrkImg {
+    width: 500px;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+ #rkgm, #pkrszb, #zpyyzj, #hjrk{
+    width: 500px;
+    height: 410px;
+    display: inline-block;
+}
+
+#chartOneSeventh, #chartOneFifteenth, #chartOneSixteenth, #chartOneSeventeenth, #chartOneSixth, #chartOneEighth, #chartOneNinth, #chartOneTenth, #chartOneEleventh, #chartOneTwelfth, #chartOneThirteenth, #chartOneFourteenth {
+    width: 800px;
+    height: 410px;
+    display: inline-block;
+}
+
+#chartOneEighteenth {
+    width: 1035px;
+    height: 410px;
+    display: inline-block;
+}
+
+.chartOneEighteenthImg {
+    width: 1035px;
+    height: auto;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+.chartOneFifteenthImg, .chartOneSixteenthImg, .chartOneSeventeenthImg, .chartOneFirstImg, .chartOneSecondImg, .chartOneThirdImg, .chartOneSixthImg, .chartOneSeventhImg, .chartOneEighthImg, .chartOneNinthImg, .chartOneTenthImg, .chartOneEleventhImg, .chartOneTwelfthImg, .chartOneThirteenthImg, .chartOneFourteenthImg {
+    width: 800px;
+    height: auto;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+
+#chartOneFifthYear, #chartOneFifthDoor, #chartOneFourthNum, #chartOneFourthHold {
+    width: 480px;
+    height: 410px;
+    display: inline-block;
+}
+
+.chartOneFifthImg, .chartOneFourthImg {
+    width: 1000px;
+    height: auto;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+#chartOneFifth, #chartOneFourth {
+    width: 1000px;
+    height: 475px;
+    display: inline-block;
+}
+
+.OneFifthRight, .OneFourthRight {
+    width: 480px;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+.OneFourthLeft, .OneFifthLeft {
+    width: 480px;
+    display: inline-block;
+}

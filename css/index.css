@@ -1,0 +1,243 @@
+
+
+/*正式样式*/
+.charts-data{
+    width: 100%;
+    position: relative;
+    height: 985px;
+    overflow: hidden;
+}
+.charts-data::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.charts-left,.center,.charts-right{
+    float: left;
+}
+.charts-left,.charts-right{
+    width: 2540px;
+}
+.charts-data .center{
+    width: 2600px;
+    height: 985px;
+    overflow: hidden;
+}
+.charts-data .center .c-left,.charts-data .center .c-right{
+    width: 800px;
+    height: 985px;
+    float: left;
+    position: relative;
+}
+.charts-data .center .c-left .map-left,.charts-data .center .c-right .map-right{
+    width: 800px;
+    height: 985px;
+    position: relative;
+}
+.charts-data .center .tp,.charts-data .center .ph{
+    height: 985px;
+    float: left;
+    width: 390px;
+    margin-top: 250px;
+    padding: 0 5px;
+}
+.charts-data .top,.charts-data .bottom{
+    width: 100%;
+    height: 477px;
+    overflow: hidden;
+}
+.map-content{
+    width: 1000px;
+    height: 985px;
+    margin: auto;
+    position: relative;
+    float: left;
+}
+.map-content .top_data{
+    font-size: 22px;
+    color: #7ef9fe;
+    position: relative;
+    top: 25px;
+}
+.map-content .top_data::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.map-content .top_data .left{
+    float: left;
+}
+.map-content .top_data .right{
+    float: right;
+}
+.map-content .top_data .tit{
+    font-size: 22px;
+    color: #7ef9fe;
+    padding-bottom: 10px;
+}
+.map-content .top_data .text-right{
+    text-align: right;
+}
+.map-content .top_data ul li{
+    display: inline-block;
+    text-align: center;
+}
+.map-content .top_data ul li div{
+    width: 41px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 36px;
+    background-color: #003054;
+    border: 1px solid #005180;
+    color: #7ef9fe;
+}
+#map{
+    width: 680px;
+    height: 680px;
+    margin: auto;
+    position: relative;
+    top: 60px;
+}
+.data-list{
+    width: 100%;
+}
+.data-list-left{
+    position: absolute;
+    top: 1%;
+    left: 30px;
+}
+.data-list-right{
+    position: absolute;
+    top: 1%;
+    right: -30px;
+}
+.data-list ul::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+.data-list ul li{
+    float: left;
+    margin-left: 1%;
+}
+.data-list ul li:nth-child(1){
+    margin-left: 0%;
+}
+.data-list ul li .title{
+    font-size: 20px;
+    color: #ccddf7;
+    border-bottom: 1px solid rgba(66,203,232,0.71);
+    padding: 15px 0;
+}
+.data-list ul li .data-box{
+    background-color: rgba(6,40,57,0.71);
+    color: rgb(105, 209, 214);
+    padding:  10px;
+    overflow: hidden;
+    width: 240px;
+}
+.data-list ul li .data-box .icon{
+    float: left;
+    width: 60px;
+    height: 60px;
+    border: 2px solid rgba(66,203,232,0.71);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-right:5px;
+}
+.data-list ul li .data-box .icon img{
+    width: 50%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+.data-list ul li .data-box .data-num{
+    float: left;
+    width: 170px;
+}
+.data-list ul li .data-box .data-num p:nth-child(1){
+    font-size: 30px;
+}
+.data-list ul li .data-box .data-num p:nth-child(2){
+    color: #ccddf7;
+    word-break:break-all;
+    word-wrap:break-word;
+}
+.data-list ul li .data-box .data-bottom{
+    word-break:break-all;
+    word-wrap:break-word;
+}
+.data-list ul li .data-box .data-bottom span{
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+}
+.data-list ul li .data-box .data-bottom span:nth-child(2){
+    margin-left: 4%;
+}
+.map-content .data-table{
+    position: absolute;
+    width: 90%;
+    max-width: 100%;
+    left: 10%;
+    top: 75%;
+}
+.map-content .data-table table{
+    position: absolute;
+    width: 90%;
+    background-color: transparent;
+    border: none;
+    border-collapse:collapse;
+    border-spacing:0;
+}
+.map-content .data-table tr>th{
+    background-color: #1b5585;
+    color: #eff6ff;
+    border: 1px solid #072131;
+    border-top-width: 0;
+    font-size: 16px;
+    text-align: center;
+    line-height: 42px;
+}
+.map-content .data-table tr>td{
+    background-color: rgba(26,56,81,0.8);
+    color: #bdecfe;
+    border: 1px solid #072131;
+    font-size: 14px;
+    text-align: center;
+    line-height: 42px;
+}
+.map-content .data-table tr:nth-of-type(odd)>td{
+    background-color: rgba(36,82,121,0.8);
+}
+/*图表统一样式*/
+.chartBox{
+    margin: 0 0 0 30px;
+    float: left;
+
+}
+.charts-data .center .tp .chartBox{
+    width: 100%;
+    height: 340px;
+}
+.charts-data .center .tp .chartBox:nth-child(2){
+    margin-top: 10px;
+}
+.charts-data .center .ph .chartBox{
+    width: 100%;
+    height: 100%;
+}
+.chartCommon{
+    width:600px;
+}
+#OneChart,#TwoChart,#ThreeChart,#FourChart,#FiveChart,#SixChart,#SevenChart,#FourteenChart,#FifteenChart,#SixteenChart,#SeventeenChart,#EighteenChart,#NineteenChart,#TwentyChart,#TwentyOneChart,#TwentyTwoChart{
+    width: 100%;
+    height: 420px;
+}
+#EightChart,#NineChart,#TweChart,#ThiChart{
+    height: 300px;
+}
+#TenChart,#EleChart{
+    height: 650px;
+}

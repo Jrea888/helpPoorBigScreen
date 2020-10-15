@@ -1,0 +1,22 @@
+.wzzpcjImg ,.vrzpcjImg,.appsyqkImg{
+    width: 950px;
+    height: 480px;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+#wzzpcj,#vrzpcj,#appsyqk{
+    width: 950px;
+    height: 400px;
+    display: inline-block;
+}
+.wzzpcjpmImg,.appsyzjfImg,.appsypmImg{
+    width: 750px;
+    height: 480px;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+#wzzpcjpm,#appsyzjf,#appsypm{
+    width: 750px;
+    height: 400px;
+    display: inline-block;
+}

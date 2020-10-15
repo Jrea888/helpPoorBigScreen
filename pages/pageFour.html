@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精准扶贫大屏4</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pageFour.css">
+</head>
+<body>
+<div class="wrap" onclick="javascript:window.location.href='./pageFive.html'">
+    <div class="header">
+        <div class="timeBox">
+            <div class="jzTime">
+                本分析采用截至2018年12月31日24时的全国扶贫开发信息系统、陕西省脱贫攻坚大数据平台和咸阳市精准扶贫大数据平台系统数据
+            </div>
+        </div>
+        <div class="h-right">
+            <div id="nowTime">【当前日期：<span></span>】</div>
+            <div id="weather">天气：<span></span></div>
+        </div>
+        <div class="djs">
+            <span class="tit">距离完成年度脱贫任务仅剩</span>
+            <span class="djs-box" id="days">0</span>
+            <span class="pouct">
+                天
+            </span>
+            <span class="djs-box" id="ss">0</span>
+            <span class="pouct">
+                时
+            </span>
+            <span class="djs-box" id="ms">0</span>
+            <span class="pouct">
+                分
+            </span>
+            <span class="djs-box" id="mm">0</span>
+            <span class="pouct">
+                秒
+            </span>
+        </div>
+    </div>
+    <div class="topCharts">
+        <!--2016年建档立卡户主要燃料类型占比分析-->
+        <div class="ysrllxzbImg">
+            <div class="mhb-pphd"><h2>2016年建档立卡户主要燃料类型占比分析 </h2></div>
+            <div class="mhb-ppbd">
+                <div id="ysrllxzb2016"></div>
+            </div>
+        </div>
+        <!--全市未脱贫户因病致贫变化情况-->
+        <div class="ybzphsImg">
+            <div class="mhb-pphd"><h2>全市未脱贫户因病致贫变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ybzphs"></div>
+            </div>
+        </div>
+        <!--致贫原因为“因病致贫”占比变化-->
+        <div class="ybzpzbImg">
+            <div class="mhb-pphd"><h2>致贫原因为“因病致贫”占比变化</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ybzpzb"></div>
+            </div>
+        </div>
+        <!--各县市历年度未脱贫户因病致贫变化情况-->
+        <div class="gxybzpqkImg">
+            <div class="mhb-pphd"><h2>各县市历年度未脱贫户因病致贫变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxybzpqk"></div>
+            </div>
+        </div>
+        <!--礼泉、乾县等7个县区中未脱贫户主要致贫原因为“因病致贫”户数变化情况-->
+        <div class="qgxybzpqkImg">
+            <div class="mhb-pphd"><h2>礼泉、乾县等7个县区中未脱贫户主要致贫原因为“因病致贫”户数变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qgxybzpqk"></div>
+            </div>
+        </div>
+        <!--礼泉、乾县等7个县区中未脱贫户主要致贫原因为“因病致贫”占比变化情况-->
+        <div class="qgxybzpzbImg">
+            <div class="mhb-pphd"><h2>礼泉、乾县等7个县区中未脱贫户主要致贫原因为“因病致贫”占比变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qgxybzpzb"></div>
+            </div>
+        </div>
+        <!--未脱贫户主要致贫原因为“因残致贫”户数占比变化情况-->
+        <div class="yczpzbImg">
+            <div class="mhb-pphd"><h2>未脱贫户主要致贫原因为“因残致贫”户数占比变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="yczpzb"></div>
+            </div>
+        </div>
+        <!--各县市2018年度产业扶贫总计情况-->
+        <div class="fpcyzjImg">
+            <div class="mhb-pphd"><h2>各县市2018年度产业扶贫总计情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="fpcyzj"></div>
+            </div>
+        </div>
+        <div class="fpztqkImg">
+            <div class="mhb-pphd"><h2>全市贫困户产业受益总体分布图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="fpztqk"></div>
+            </div>
+        </div>
+        <div class="yzhsrImg">
+            <div class="mhb-pphd"><h2>全市贫困户种养殖业户数分布图（无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="yzhsr"></div>
+            </div>
+        </div>
+        <!--<div class="paihImg">-->
+            <!--<div class="mhb-pphd"><h2>各县排行榜</h2></div>-->
+            <!--<div class="mhb-ppbd">-->
+                <!--<div id="paih"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+    <div class="bottomCharts">
+        <!--2017年建档立卡户主要燃料类型占比分析-->
+        <div class="ysrllxzbImg">
+            <div class="mhb-pphd"><h2>2017年建档立卡户主要燃料类型占比分析 </h2></div>
+            <div class="mhb-ppbd">
+                <div id="ysrllxzb2017"></div>
+            </div>
+        </div>
+        <!--2018年建档立卡户主要燃料类型占比分析-->
+        <div class="ysrllxzbImg">
+            <div class="mhb-pphd"><h2>2018年建档立卡户主要燃料类型占比分析 </h2></div>
+            <div class="mhb-ppbd">
+                <div id="ysrllxzb2018"></div>
+            </div>
+        </div>
+        <!--全市历年度未脱贫户因残致贫变化情况-->
+        <div class="yczphsImg">
+            <div class="mhb-pphd"><h2>全市历年度未脱贫户因残致贫变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="yczphs"></div>
+            </div>
+        </div>
+        <!--各县市历年度未脱贫户因病致贫占比情况-->
+        <div class="gxybzpqzbImg">
+            <div class="mhb-pphd"><h2>各县市历年度未脱贫户因病致贫占比情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxybzpqzb"></div>
+            </div>
+        </div>
+        <div class="qgxyczpzbImg">
+            <div class="mhb-pphd"><h2>彬州、泾阳等7县市中未脱贫户主要致贫原因为“因残致贫”占比变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qgxyczpzb"></div>
+            </div>
+        </div>
+        <!--各县市历年度未脱贫户因病致贫占比情况-->
+        <div class="gxyczpqzbImg">
+            <div class="mhb-pphd"><h2>各县市历年度未脱贫户因病致贫占比情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxyczpqzb"></div>
+            </div>
+        </div>
+        <!--全市2018年度治疗费用报销情况-->
+        <div class="zlfbxfImg">
+            <div class="mhb-pphd"><h2>全市2018年度治疗费用报销情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zlfbxf"></div>
+            </div>
+        </div>
+        <!--全市贫困户种植业户数及收入分布图（无数据）-->
+        <div class="zzyhsrImg">
+            <div class="mhb-pphd"><h2>全市贫困户种植业户数及收入分布图（无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zzyhsr"></div>
+            </div>
+        </div>
+        <!--2018全市各县市治疗费用报销总计-->
+        <div class="zlfyzjImg">
+            <div class="mhb-pphd"><h2>2018全市各县市治疗费用报销总计</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zlfyzj"></div>
+            </div>
+        </div>
+        <div class="nvldlqkImg">
+            <div class="mhb-pphd"><h2>全市女性潜在劳动力分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="nvldlqk"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/pageFour.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/common.js"></script>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精准扶贫大屏6</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pageSix.css">
+</head>
+<body>
+<div class="wrap" onclick="javascript:window.location.href='./pageSeven.html'">
+    <div class="header">
+        <div class="timeBox">
+            <div class="jzTime">
+                本分析采用截至2018年12月31日24时的全国扶贫开发信息系统、陕西省脱贫攻坚大数据平台和咸阳市精准扶贫大数据平台系统数据
+            </div>
+        </div>
+        <div class="h-right">
+            <div id="nowTime">【当前日期：<span></span>】</div>
+            <div id="weather">天气：<span></span></div>
+        </div>
+        <div class="djs">
+            <span class="tit">距离完成年度脱贫任务仅剩</span>
+            <span class="djs-box" id="days">0</span>
+            <span class="pouct">
+                天
+            </span>
+            <span class="djs-box" id="ss">0</span>
+            <span class="pouct">
+                时
+            </span>
+            <span class="djs-box" id="ms">0</span>
+            <span class="pouct">
+                分
+            </span>
+            <span class="djs-box" id="mm">0</span>
+            <span class="pouct">
+                秒
+            </span>
+        </div>
+    </div>
+    <div class="topCharts">
+        <!--全市户均收入最高的五种家禽家畜（无数据）-->
+        <div class="zgwzjqImg">
+            <div class="mhb-pphd"><h2>全市户均收入最高的五种家禽家畜（无数据）</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zgwzjq"></div>
+            </div>
+        </div>
+        <!--全市贫困户2018年林业产业分布图-->
+        <div class="lycyfbImg">
+            <div class="mhb-pphd"><h2>全市贫困户2018年林业产业分布图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="lycyfb"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力县内区域务工三个月以内分析-->
+        <div class="ldlsgyynImg">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力县内区域务工三个月以内分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ldlsgyyn"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力县内区域务工九个月以上数据分析-->
+        <div class="ldljgyysImg">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力县内区域务工九个月以上数据分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ldljgyys"></div>
+            </div>
+        </div>
+        <!--各县市部分家禽家畜生猪养殖户数分布表-->
+        <div class="szyzhsImg">
+            <div class="mhb-pphd"><h2>各县市部分家禽家畜生猪养殖户数分布表</h2></div>
+            <div class="mhb-ppbd">
+                <div id="szyzhs"></div>
+            </div>
+        </div>
+        <!--各县市部分家禽家畜肉羊养殖户数分布表-->
+        <div class="ryyzhsImg">
+            <div class="mhb-pphd"><h2>各县市部分家禽家畜肉羊养殖户数分布表</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ryyzhs"></div>
+            </div>
+        </div>
+        <!--各县市部分家禽家畜肉牛养殖户数分布表-->
+        <div class="rnyzhsImg">
+            <div class="mhb-pphd"><h2>各县市部分家禽家畜肉牛养殖户数分布表</h2></div>
+            <div class="mhb-ppbd">
+                <div id="rnyzhs"></div>
+            </div>
+        </div>
+        <!--全市贫困户2018年度苹果产业收入分布情况-->
+        <div class="pgcysrfbImg">
+            <div class="mhb-pphd"><h2>全市贫困户2018年度苹果产业收入分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="pgcysrfb"></div>
+            </div>
+        </div>
+        <!--全市2016年贫困户苹果产业收入情况-->
+        <div class="ylpkpgsrImg">
+            <div class="mhb-pphd"><h2>全市2016年贫困户苹果产业收入情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ylpkpgsr"></div>
+            </div>
+        </div>
+        <!--各县市苹果种植总面积排名-->
+        <div class="gxspgzzmjImg">
+            <div class="mhb-pphd"><h2>各县市苹果种植总面积排名</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxspgzzmj"></div>
+            </div>
+        </div>
+        <!--各县市苹果种植总收入排名-->
+        <div class="gxspgzzsrImg">
+            <div class="mhb-pphd"><h2>各县市苹果种植总收入排名</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxspgzzsr"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomCharts">
+        <!--各县市贫困户种植户数最多的作物分布图-->
+        <div class="zzzdzwImg">
+            <div class="mhb-pphd"><h2>各县市贫困户种植户数最多的作物分布图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zzzdzw"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力县内区域务工3.0个月-8.9个月数据分析-->
+        <div class="ldljgyynImg">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力县内区域务工3.0个月-8.9个月数据分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ldljgyyn"></div>
+            </div>
+        </div>
+        <!--2018年全市潜在劳动力（普通/技能/半/弱劳动力）县内区域务工时间分析-->
+        <div class="ldlqusjfxImg">
+            <div class="mhb-pphd"><h2>2018年全市潜在劳动力县内区域务工时间分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ldlqusjfx"></div>
+            </div>
+        </div>
+        <!--各县市部分家禽家畜奶山羊养殖户数分布表-->
+        <div class="nsyyzhsImg">
+            <div class="mhb-pphd"><h2>各县市部分家禽家畜奶山羊养殖户数分布表</h2></div>
+            <div class="mhb-ppbd">
+                <div id="nsyyzhs"></div>
+            </div>
+        </div>
+        <!--各县市部分家禽家畜鸡养殖户数分布表-->
+        <div class="jyzhsImg">
+            <div class="mhb-pphd"><h2>各县市部分家禽家畜鸡养殖户数分布表</h2></div>
+            <div class="mhb-ppbd">
+                <div id="jyzhs"></div>
+            </div>
+        </div>
+        <!--全市贫困户2018年度苹果产业面积分布情况-->
+        <div class="pgcymjfbImg">
+            <div class="mhb-pphd"><h2>全市贫困户2018年度苹果产业面积分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="pgcymjfb"></div>
+            </div>
+        </div>
+        <!--全市贫困户2018年度苹果产业户均收入及户均纯收入统计情况-->
+        <div class="pgcyhjsrImg">
+            <div class="mhb-pphd"><h2>全市贫困户2018年度苹果产业户均收入及户均纯收入统计情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="pgcyhjsr"></div>
+            </div>
+        </div>
+        <!--全市2015年贫困户苹果产业收入情况-->
+        <div class="ywpkpgsrImg">
+            <div class="mhb-pphd"><h2>全市2015年贫困户苹果产业收入情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="ywpkpgsr"></div>
+            </div>
+        </div>
+        <!--各县市苹果每亩收入排名-->
+        <div class="gxsmmsrImg">
+            <div class="mhb-pphd"><h2>各县市苹果每亩收入排名</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxsmmsr"></div>
+            </div>
+        </div>
+        <!--全市贫困户2018年度苹果产业户均收入占比情况-->
+        <div class="pghjsrzbImg">
+            <div class="mhb-pphd"><h2>全市贫困户2018年度苹果产业户均收入占比情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="pghjsrzb"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/pageSix.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/common.js"></script>
+</html>

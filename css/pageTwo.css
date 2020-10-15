@@ -1,0 +1,54 @@
+ #chartTwoThird, #chartOneNineteenth {
+    width: 920px;
+    height: 410px;
+    display: inline-block;
+}
+
+#chartTwoSecond {
+    width: 1135px;
+    height: 410px;
+    display: inline-block;
+}
+.chartTwoSecondImg {
+    width: 1135px;
+    height:auto;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+.tpcsqkImg, .fgzjImg, .gxsldzkzjImg, .chartTwoFourthImg, .wtpkhzjImg, .wtphldlImg, .hjrkzbIMg, .hjrkImg, .qsrjrkImg, .chartOneNineteenthImg, .chartTwoThirdImg {
+    width: 920px;
+    height:auto;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+ #fgzj, #wtphldl, #hjrkzb, #hjrk, #qsrjrk, #wtpkhzj, #chartTwoFourth, #gxsldzkzj, #tpcsqk {
+     width: 920px;
+     height: 410px;
+     display: inline-block;
+ }
+
+.gxspkhzjImg, .chartTwoFirstImg, .tprszbImg, .tpzjfxImg{
+    width: 550px;
+    height:auto;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+
+#chartTwoFirst, #tprszb, #tpzjfx, #gxspkhzj{
+    width: 550px;
+    height: 410px;
+    display: inline-block;
+}
+.chartTwoFifthImg, .chartTwoSixthImg {
+    width: 1080px;
+    height:auto;
+    margin: 0 0 0 30px;
+    display: inline-block;
+}
+#chartTwoFifth, #chartTwoSixth {
+    width: 1080px;
+    height: 410px;
+    display: inline-block;
+}

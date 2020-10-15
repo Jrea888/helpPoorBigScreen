@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精准扶贫大屏2</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pageTwo.css">
+</head>
+<body>
+<div class="wrap" onclick="javascript:window.location.href='./pageThree.html'">
+    <div class="header">
+        <div class="timeBox">
+            <div class="jzTime">
+                本分析采用截至2018年12月31日24时的全国扶贫开发信息系统、陕西省脱贫攻坚大数据平台和咸阳市精准扶贫大数据平台系统数据
+            </div>
+        </div>
+        <div class="h-right">
+            <div id="nowTime">【当前日期：<span></span>】</div>
+            <div id="weather">天气：<span></span></div>
+        </div>
+        <div class="djs">
+            <span class="tit">距离完成年度脱贫任务仅剩</span>
+            <span class="djs-box" id="days">0</span>
+            <span class="pouct">
+                天
+            </span>
+            <span class="djs-box" id="ss">0</span>
+            <span class="pouct">
+                时
+            </span>
+            <span class="djs-box" id="ms">0</span>
+            <span class="pouct">
+                分
+            </span>
+            <span class="djs-box" id="mm">0</span>
+            <span class="pouct">
+                秒
+            </span>
+        </div>
+    </div>
+    <div class="topCharts">
+        <!--&lt;!&ndash;三原县主要致贫原因历年变化趋势图&ndash;&gt;-->
+        <!--<div class="chartOneFifteenthImg">-->
+            <!--<div class="mhb-pphd"><h2>三原县主要致贫原因历年变化趋势图</h2></div>-->
+            <!--<div class="mhb-ppbd">-->
+                <!--<div id="chartOneFifteenth"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--&lt;!&ndash;兴平市主要致贫原因历年变化趋势图&ndash;&gt;-->
+        <!--<div class="chartOneSeventeenthImg">-->
+            <!--<div class="mhb-pphd"><h2>兴平市主要致贫原因历年变化趋势图</h2></div>-->
+            <!--<div class="mhb-ppbd">-->
+                <!--<div id="chartOneSeventeenth"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+
+
+
+        <!--2014年至2018年剩余贫困户家庭人口数变化曲线-->
+        <div class="hjrkzbIMg">
+            <div class="mhb-pphd"><h2>2014年至2018年剩余贫困户家庭人口数变化曲线</h2></div>
+            <div class="mhb-ppbd">
+                <div id="hjrkzb"></div>
+            </div>
+        </div>
+
+        <!--2014至2018年未脱贫户劳动力占比变化曲线-->
+        <div class="chartOneNineteenthImg">
+            <div class="mhb-pphd"><h2>2014至2018年未脱贫户劳动力占比变化曲线</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneNineteenth"></div>
+            </div>
+        </div>
+
+        <!--各县市2018年度脱贫户人均纯收入-->
+        <div class="chartTwoThirdImg">
+            <div class="mhb-pphd"><h2>各县市2018年度脱贫户人均纯收入</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartTwoThird"></div>
+            </div>
+        </div>
+
+        <!--全市2018年度脱贫户数占比分布情况-->
+        <div class="chartTwoFirstImg">
+            <div class="mhb-pphd"><h2>全市2018年度脱贫户分布占比情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartTwoFirst"></div>
+            </div>
+        </div>
+
+        <!--全市2018年度脱贫人数占比分布情况-->
+        <div class="tprszbImg">
+            <div class="mhb-pphd"><h2>全市2018年度脱贫人数占比分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="tprszb"></div>
+            </div>
+        </div>
+
+        <!--全市2018年度脱贫总计分析-->
+        <div class="tpzjfxImg">
+            <div class="mhb-pphd"><h2>全市2018年度脱贫总计分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="tpzjfx"></div>
+            </div>
+        </div>
+
+        <!--各县市2018年度脱贫人口劳动状况分布情况-->
+        <div class="chartTwoFifthImg">
+            <div class="mhb-pphd"><h2>各县市2018年度脱贫人口劳动状况分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartTwoFifth"></div>
+            </div>
+        </div>
+
+        <!--各县市脱贫人口劳动情况总计-->
+        <div class="gxsldzkzjImg">
+            <div class="mhb-pphd"><h2>各县市脱贫人口劳动情况总计</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxsldzkzj"></div>
+            </div>
+        </div>
+
+        <!--2018年各县市脱贫户健康人员占比分布图-->
+        <div class="chartTwoFourthImg">
+            <div class="mhb-pphd"><h2>2018年各县市脱贫户健康人员占比分布图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartTwoFourth"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomCharts">
+
+        <!--全市2014年至2018年户均人口变化情况-->
+        <div class="qsrjrkImg">
+            <div class="mhb-pphd"><h2>全市2014年至2018年户均人口变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="qsrjrk"></div>
+            </div>
+        </div>
+
+        <!--2014年至2018年未脱贫户劳动力情况-->
+        <div class="wtphldlImg">
+            <div class="mhb-pphd"><h2>2014年至2018年未脱贫户劳动力情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="wtphldl"></div>
+            </div>
+        </div>
+
+        <!--2014年至2018年未脱贫户劳动力总计情况-->
+        <div class="wtpkhzjImg">
+            <div class="mhb-pphd"><h2>2014年至2018年未脱贫户劳动力总计情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="wtpkhzj"></div>
+            </div>
+        </div>
+
+        <!--全市2018年度脱贫户属性户分布情况-->
+        <div class="chartTwoSecondImg">
+            <div class="mhb-pphd"><h2>全市2018年度脱贫户属性户分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartTwoSecond"></div>
+            </div>
+        </div>
+
+        <!--各县市脱贫户属性总计分析-->
+        <div class="gxspkhzjImg">
+            <div class="mhb-pphd"><h2>各县市脱贫户属性总计分析</h2></div>
+            <div class="mhb-ppbd">
+                <div id="gxspkhzj"></div>
+            </div>
+        </div>
+
+        <!--各县市2018年度脱贫户务工分布情况-->
+        <div class="chartTwoSixthImg">
+            <div class="mhb-pphd"><h2>各县市2018年度脱贫户务工分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartTwoSixth"></div>
+            </div>
+        </div>
+        <!--各县市2018年度脱贫户务工分布总计-->
+        <div class="fgzjImg">
+            <div class="mhb-pphd"><h2>各县市2018年度脱贫户务工分布总计</h2></div>
+            <div class="mhb-ppbd">
+                <div id="fgzj"></div>
+            </div>
+        </div>
+
+        <!--各县市2018年脱贫户脱贫措施情况-->
+        <div class="tpcsqkImg">
+            <div class="mhb-pphd"><h2>各县市2018年脱贫户脱贫措施情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="tpcsqk"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/pageTwo.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/echarts.min.js"></script>
+</html>

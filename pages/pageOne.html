@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精准扶贫大屏1</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/pageOne.css">
+</head>
+<body>
+<div class="wrap" onclick="javascript:window.location.href='./pageTwo.html'">
+    <div class="header">
+        <div class="timeBox">
+            <div class="jzTime">
+                本分析采用截至2018年12月31日24时的全国扶贫开发信息系统、陕西省脱贫攻坚大数据平台和咸阳市精准扶贫大数据平台系统数据
+            </div>
+        </div>
+        <div class="h-right">
+            <div id="nowTime">【当前日期：<span></span>】</div>
+            <div id="weather">天气：<span></span></div>
+        </div>
+        <div class="djs">
+            <span class="tit">距离完成年度脱贫任务仅剩</span>
+            <span class="djs-box" id="days">0</span>
+            <span class="pouct">
+                天
+            </span>
+            <span class="djs-box" id="ss">0</span>
+            <span class="pouct">
+                时
+            </span>
+            <span class="djs-box" id="ms">0</span>
+            <span class="pouct">
+                分
+            </span>
+            <span class="djs-box" id="mm">0</span>
+            <span class="pouct">
+                秒
+            </span>
+        </div>
+    </div>
+    <div class="topCharts">
+        <!--剩余贫困人口规模-->
+        <div class="chartOneFourthImg">
+            <div id="chartOneFourth">
+                <!--各县市剩余贫困人数占比情况-->
+                <div class="OneFourthLeft">
+                    <div class="mhb-pphdNum"><h2>各县市剩余贫困人数占比情况</h2></div>
+                    <div class="mhb-ppbdNum">
+                        <div id="chartOneFourthNum"></div>
+                    </div>
+                </div>
+                <div class="OneFourthRight">
+                    <div class="mhb-pphdNum"><h2>各县市剩余贫困户占比情况</h2></div>
+                    <div class="mhb-ppbdNum">
+                        <div id="chartOneFourthHold"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--淳化县主要致贫原因历年变化趋势图-->
+        <div class="chartOneSeventhImg">
+            <div class="mhb-pphd"><h2>淳化县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneSeventh"></div>
+            </div>
+        </div>
+        <!--永寿县主要致贫原因历年变化趋势图-->
+        <div class="chartOneNinthImg">
+            <div class="mhb-pphd"><h2>永寿县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneNinth"></div>
+            </div>
+        </div>
+        <!--彬州市主要致贫原因历年变化趋势图-->
+        <div class="chartOneEleventhImg">
+            <div class="mhb-pphd"><h2>彬州市主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneEleventh"></div>
+            </div>
+        </div>
+        <!--礼泉县主要致贫原因历年变化趋势图-->
+        <div class="chartOneThirteenthImg">
+            <div class="mhb-pphd"><h2>礼泉县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneThirteenth"></div>
+            </div>
+        </div>
+        <!--三原县主要致贫原因历年变化趋势图-->
+        <div class="chartOneFifteenthImg">
+            <div class="mhb-pphd"><h2>三原县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneFifteenth"></div>
+            </div>
+        </div>
+        <!--兴平市主要致贫原因历年变化趋势图-->
+        <div class="chartOneSeventeenthImg">
+            <div class="mhb-pphd"><h2>兴平市主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneSeventeenth"></div>
+            </div>
+        </div>
+        <!--剩余贫困人口规模-->
+        <div class="syrkgmImg">
+            <div class="mhb-pphd"><h2>剩余贫困人口规模</h2></div>
+            <div class="mhb-ppbd">
+                <div id="rkgm"></div>
+            </div>
+        </div>
+        <div class="pkrszbImg">
+            <div class="mhb-pphd"><h2>2018年全市剩余贫困人数分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="pkrszb"></div>
+            </div>
+        </div>
+        <!---2014年至2018年主要致贫原因总计分布情况--->
+        <div class="zpyyzjImg">
+            <div class="mhb-pphd"><h2>2014年至2018年主要致贫原因总计分布情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="zpyyzj"></div>
+            </div>
+        </div>
+    </div>
+    <div class="bottomCharts">
+        <!--剩余贫困户分析-->
+        <div class="chartOneFifthImg">
+            <div id="chartOneFifth">
+                <!--各县市剩余贫困人数占比情况-->
+                <div class="OneFifthLeft">
+                    <div class="mhb-pphdNum"><h2>2018年全市剩余贫困户属性分布情况</h2></div>
+                    <div class="mhb-ppbdNum">
+                        <div id="chartOneFifthDoor"></div>
+                    </div>
+                </div>
+                <div class="OneFifthRight">
+                    <div class="mhb-pphdNum"><h2>年度剩余贫困户人均纯收入</h2></div>
+                    <div class="mhb-ppbdNum">
+                        <div id="chartOneFifthYear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--全市主要致贫原因历年变化趋势图-->
+        <div class="chartOneSixthImg">
+            <div class="mhb-pphd"><h2>全市主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneSixth"></div>
+            </div>
+        </div>
+        <!--旬邑县主要致贫原因历年变化趋势图-->
+        <div class="chartOneEighthImg">
+            <div class="mhb-pphd"><h2>旬邑县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneEighth"></div>
+            </div>
+        </div>
+        <!--长武县主要致贫原因历年变化趋势图-->
+        <div class="chartOneTenthImg">
+            <div class="mhb-pphd"><h2>长武县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneTenth"></div>
+            </div>
+        </div>
+        <!--泾阳县主要致贫原因历年变化趋势图-->
+        <div class="chartOneTwelfthImg">
+            <div class="mhb-pphd"><h2>泾阳县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneTwelfth"></div>
+            </div>
+        </div>
+        <!--乾县主要致贫原因历年变化趋势图-->
+        <div class="chartOneFourteenthImg">
+            <div class="mhb-pphd"><h2>乾县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneFourteenth"></div>
+            </div>
+        </div>
+        <!--武功县主要致贫原因历年变化趋势图-->
+        <div class="chartOneSixteenthImg">
+            <div class="mhb-pphd"><h2>武功县主要致贫原因历年变化趋势图</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneSixteenth"></div>
+            </div>
+        </div>
+        <!--2014年与2018年相比主要致贫原因变化情况-->
+        <div class="chartOneEighteenthImg">
+            <div class="mhb-pphd"><h2>2014年与2018年相比主要致贫原因变化情况</h2></div>
+            <div class="mhb-ppbd">
+                <div id="chartOneEighteenth"></div>
+            </div>
+        </div>
+        <!--全市2014年至2018年户均人口-->
+        <div class="hjrkImg">
+            <div class="mhb-pphd"><h2>全市2014年至2018年户均人口</h2></div>
+            <div class="mhb-ppbd">
+                <div id="hjrk"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/pageOne.js"></script>
+<script src="../js/echarts.min.js"></script>
+<script src="../js/common.js"></script>
+</html>
